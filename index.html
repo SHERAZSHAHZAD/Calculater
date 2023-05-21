@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist\css\bootstrap.min.css">
+</head>
+<body style=" background-color: darkslategrey;">
+<div class="calculater">
+    <div id="cal">
+<input type="text" placeholder="0" readonly id="result" style="margin: 10px 5px;">
+<div>
+<button  class="butt" style="background-color: red ; margin-bottom: 10px;" onclick="clearResult('')">AC</button>
+<button class="butt" style="color: white; background-color: black;" onclick="deleteNumber()" >DEL</button>
+<button class="butt"  onclick="appendOperater('%')">%</button>
+<button class="butt"  onclick="appendOperater('/')">/</button>
+</div>
+<div>
+    <button style=" margin-bottom: 10px;" class="butt" onclick="appendNumber(1)">1</button>
+    <button class="butt" onclick="appendNumber(2)">2</button>
+    <button class="butt" onclick="appendNumber(3)">3</button>
+    <button class="butt"  onclick="appendOperater('*')">*</button>
+</div>
+    <div>
+        <button class="butt" style="margin-bottom: 10px;" onclick="appendNumber(1)">4</button>
+        <button class="butt" onclick="appendNumber(5)">5</button>
+        <button class="butt" onclick="appendNumber(6)">6</button>
+        <button class="butt" onclick="appendOperater('-')">-</button>
+    </div>
+        <div>
+            <button class="butt" style="margin-bottom: 10px;" onclick="appendNumber(7)">7</button>
+            <button class="butt" onclick="appendNumber(8)">8</button>
+            <button class="butt" onclick="appendNumber(9)">9</button>
+            <button class="butt" onclick="appendOperater('+')">+</button>
+        </div>
+        <div id="last">
+            <button class="butt" onclick="appendNumber('00')">00</button>
+            <button class="butt" onclick="appendNumber(0)">0</button>
+            <button class="butt" onclick="appendOperater('.')">.</button>
+            <button class="butt" style="background-color: coral;" onclick="checkResult('')">=</button>
+        </div>
+    </div>
+</div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
